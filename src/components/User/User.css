@@ -1,8 +1,12 @@
-.pair{
-    background: #61dafb;
-    text-align: right;
-}
-.odd{
-    background: goldenrod;
+.first{
     text-align: left;
+    background: goldenrod;
+}
+.second{
+    text-align: center;
+    background: aquamarine;
+}
+.third{
+    text-align: right;
+    background: chocolate;
 }
