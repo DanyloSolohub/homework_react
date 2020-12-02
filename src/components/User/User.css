@@ -1,0 +1,8 @@
+.pair{
+    background: #61dafb;
+    text-align: right;
+}
+.odd{
+    background: goldenrod;
+    text-align: left;
+}

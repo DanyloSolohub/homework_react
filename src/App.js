@@ -1,14 +1,23 @@
 import React, {Component} from 'react';
-import {users} from "./database/UsersDB";
+import {usersWithAddress} from "./database/UsersDB";
+import UserComponent from "./components/User/UserComponent";
+import './components/User/User.css'
+
 
 class App extends Component {
     render() {
         return (
             <div>
                 {
-                    users.map(user =>{
-                    return(<div>{user.name} - {user.age} - {user.status.toString()} - {user.id}</div>)
-                    })
+                usersWithAddress.map((user,index) =>{
+                   let cls = index%2? `pair`:`odd`
+
+                    return (
+                    <UserComponent
+                    useritem = {user}
+                    cls ={cls}
+                    key={index} />);
+                })
                 }
             </div>
         );
