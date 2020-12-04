@@ -25,3 +25,4 @@ export let notebookes =[
     {name:`Samsung`,cost:5000,status:true},
     {name:`Asus`,cost:17000,status:false}
 ]
+// 1
