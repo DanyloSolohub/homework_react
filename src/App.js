@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import AllPosts from "./components && services/AllPosts";
+import All from "./components/All";
 
 class App extends Component {
     render() {
         return (
             <div>
-                <AllPosts/>
+                <All/>
             </div>
         );
     }

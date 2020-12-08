@@ -2,13 +2,14 @@ import React, {Component} from 'react';
 
 class PostComponent extends Component {
     render() {
-        let {item,onSelectpost} = this.props
+        let {item} = this.props
         return (
             <div>
+                {
                     <ul>
-                        {item.id}. {item.title} <br/>
-                        <button onClick={()=> onSelectpost(item.id)} > chose me</button>  <hr/>
+                        User:{item.userId}-{item.title}
                     </ul>
+                }
             </div>
         );
     }
