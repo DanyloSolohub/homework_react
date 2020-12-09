@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Service from "../Services/Service";
-import CommentComponent from "./CommentComponent";
+import CommentComponent from "../Components/CommentComponent";
 
 class AllComments extends Component {
     Service = new Service()

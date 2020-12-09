@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './App.css'
-import AllUsers from "./Components/AllUsers";
-import AllPosts from "./Components/AllPosts";
-import AllComments from "./Components/AllComments";
+import AllUsers from "./ALL/AllUsers";
+import AllPosts from "./ALL/AllPosts";
+import AllComments from "./ALL/AllComments";
 
 import {
     BrowserRouter as Router,

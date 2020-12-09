@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Service from "../Services/Service";
-import UserComponent from "./UserComponent";
+import UserComponent from "../Components/UserComponent";
 
 class AllUsers extends Component {
     Service = new Service()
