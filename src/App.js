@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 import './App.css'
-import AllUsers from "./ALL/AllUsers";
-import AllPosts from "./ALL/AllPosts";
-import AllComments from "./ALL/AllComments";
-
+import AllPeople from "./ALL/AllPeople";
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
 } from "react-router-dom";
+
 
 
 
@@ -18,34 +16,29 @@ class App extends Component {
     render() {
         return (
             <Router>
-            <div>
-               <div>
-                   <Link to={"/users"}>users</Link>
+            <div className={`main-block`}>
+                 <div>
+                   <Link to={""}><span className={`home-block`}>Home</span></Link>
                </div>
                <div>
-                   <Link to={"/posts"}>posts</Link>
+                   <Link  to={"/people"}><span className={`people-block`}>People</span></Link>
                </div>
-                <div>
-                   <Link to={"/comments"}>comments</Link>
-               </div>
+                </div>
+                    <div className={`advecting-box`}>
+                        <a  href="https://lpnu.ua/" target={`blank`}>Palitex-top</a>
+                    </div>
 
-                <div className={`app-route`}>
+                     <div className={`under-main`}>
                     <Switch>
-                        <Route path={'/users'} render={()=>
-                        <AllUsers/>}>
-
-                        </Route>
-                        <Route path={'/posts'} render={()=><AllPosts/>}>
-
-                        </Route>
-                        <Route path={'/comments'} render={()=><AllComments/>}>
-
+                        <Route path={'/people'} render={()=>
+                        <AllPeople/>}>
                         </Route>
                     </Switch>
                 </div>
-            </div>
+
             </Router>
         );
+
     }
 }
 
