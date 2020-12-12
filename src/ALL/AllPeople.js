@@ -7,16 +7,16 @@ import PostsComp from "../Components/PostsComp";
 class AllPeople extends Component {
     UService = new UsersService()
     PService = new PostsService()
-    state = {users:[],posts:[],userPost:null}
+    state = {users:[],posts:[],userPost:null,flag:false}
         showPost = (id) => this.setState({userPost:this.state.posts.filter(value => value.userId === id)})
-
+    Backinfo = () => this.setState({flag:!this.state.flag})
 
    render() {
-        let {users,userPost} = this.state
+        let {users,userPost,flag} = this.state
         return (
             <div>
                 {
-                    users.map((value) => <PeopleComponent item = {value}  key = {value.id} showPost={this.showPost}/>)
+                    users.map((value) => <PeopleComponent item = {value}  key = {value.id} showPost={this.showPost} Backinfo={this.Backinfo} flag={flag}/>)
                 }
                 {
                   userPost && userPost.map(value => <PostsComp item = {value} key = {value.id}/>)
