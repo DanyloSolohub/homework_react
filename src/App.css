@@ -1,0 +1,17 @@
+.main_div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sum_div{
+    background-color: royalblue;
+    width: 100%;
+    min-height: 100px;
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
