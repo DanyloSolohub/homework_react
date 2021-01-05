@@ -22,8 +22,8 @@ export  function Product(props)  {
 return(
         <div key={props.product.id}>
             {props.product.id}. {props.product.title}  <h2> {props.product.price}  </h2>
-            <button onClick={()=> addToWishlist(props.product)} >{isAddedtoWishlist? 'remove from wishlist' :'Add to wishlist'}</button>
-            <button onClick={()=> addToCart(props.product)}>{isAddedtoCart ? 'remove from cart' : 'Add to cart'}</button> <hr/> </div>
+            <button style={{background: isAddedtoWishlist? 'red':'green'}} onClick={()=> addToWishlist(props.product)} >{isAddedtoWishlist? 'remove from wishlist' :'Add to wishlist'}</button>
+            <button style={{background: isAddedtoCart? 'red':'green'}} onClick={()=> addToCart(props.product)}>{isAddedtoCart ? 'remove from cart' : 'Add to cart'}</button> <hr/> </div>
 )
 
 }
