@@ -1,0 +1,75 @@
+.navi_menu{
+    border-right: 1px solid #e4e4e4;
+    margin-left: 9%;
+}
+.menu{
+    padding-right: 45px;
+        display: flex;
+    flex-direction: row;
+    margin: 30px 0 30px;
+}
+.list_menu{
+    min-width: max-content;
+}
+.Rozetka_karusel {
+    width: 66%;
+    margin: 30px 0 150px 50px;
+}
+.Body{
+    display: flex;
+}
+.list_menu a{
+    color: #3e77aa;
+}
+.svg_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn_menu{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 15px;
+    color: white;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 7px 15px;
+    background-color: #3e77aa;
+
+}
+.commodity{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.card_body{
+    padding: 10px;
+    width: 20% ;
+    border-right: 1px  solid  #e4e4e4   ;
+    border-bottom: 1px  solid  #e4e4e4   ;
+    display: flex;
+    flex-direction: column;
+}
+.img_commodity{
+    width: 66%;
+
+}
+.nameOfCommodity a{
+    color: black;
+}
+.price{
+    color: tomato;
+    font-size: 23px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+.cards_row{
+    display: flex;
+}
+.img_size{
+    height: 50%;
+    margin: 0 auto;
+}

@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    flex-direction: column;
+
+}
+.header-top{
+    background-color: rgb(255,254,198);
+    text-align: center;
+}
+
+.header_bottom{
+    min-height: 88px;
+    display: flex;
+    flex-direction: column;
+/*    bottom logo top+bottom*/
+}
+.bottom-div{
+    min-height: 88px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 7% 0 7%;
+}
+.input-group{
+    max-width: 40%;
+
+}
+.phone{
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.header-topline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 7% 0 7%;
+}
+.header-phones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+.btn_Kataloh{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 15px;
+    color: white;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 5%;
+    padding: 7px 15px;
+    background-color: #122538;
+    cursor: pointer;
+}
+.lng_change a {
+    color: white;
+    text-decoration: none;
+}
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, sans-serif;
+}
+.header-info-lng{
+    width: 25%;
+}
+.lng_change{
+    color: white;
+    margin-right: 7px;
+    font-size: 12px;
+}
+.Login_logo a {
+    color: white;
+    text-decoration: none;
+}
+.logIn_title{
+    display: flex;
+    align-items: center;
+}
+.sity_titile{
+    display: flex;
+    align-items: center;
+}
