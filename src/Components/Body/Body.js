@@ -4,12 +4,15 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import Carousel from 'react-bootstrap/Carousel'
 import './BodyCss.css'
 import {AllCommodity} from "./AllCommodity";
-
+import Commodity from "./Commodity";
 
 
 export default function Body()  {
     const data = AllCommodity.prototype.Geturl().img
-    console.log(AllCommodity.prototype.Geturl().img[0])
+
+
+
+
 return(
         <div className={'Body'}>
             <div className={'navi_menu'}>
@@ -204,113 +207,20 @@ return(
 </Carousel>
                 </div>
 
-
-            <div  className={'commodity'}>
+                <div className={'commodity'}>
                 <div style={{ marginBottom:'50px'}}>
                     <i style={{color:'royalblue',fontSize:'25px'}} className="far fa-star"> </i>
                     <span style={{fontSize:'19px'}}> Тільки в Розетці </span>
                 </div>
-                <div className={'cards'}>
-                    <div className={'cards_row'}>
-                    <div className={'card_body'}>
-                       <div className={'img_size'}> <img className={'img_commodity'}  src={data[0].url} alt={data[0].name}/> </div>
-                        <br/>
-                        <span className={'nameOfCommodity'}> <a href="#">Крісло для геймерів <br/> Hator sport light </a>
-                             </span> <br/>
-                        <span className={'price'}>{data[0].price} $</span>
-                        <span className={'price'} style={{fontSize:'13px'}}> Закінчується</span>
-                    </div>
 
-                    <div className={'card_body'}>
-                      <div className={'img_size'}>  <img className={'img_commodity'}  src={data[1].url} alt={data[1].name}/></div>
-                        <br/>
-                        <span className={'nameOfCommodity'}> <a href="#">Крісло для геймерів <br/> Hator sport light </a>
-                             </span> <br/>
-                        <span className={'price'}> {data[1].price} $</span>
-                        <span className={'price'} style={{fontSize:'13px'}}> Закінчується</span>
-                    </div>
-                    <div className={'card_body'}>
-                       <div className={'img_size'}> <img className={'img_commodity'}  src={data[2].url} alt={data[2].name}/></div>
-                        <br/>
-                        <span className={'nameOfCommodity'}> <a href="#">Крісло для геймерів <br/> Hator sport light </a>
-                             </span> <br/>
-                        <span className={'price'}> {data[2].price} $</span>
-                        <span className={'price'} style={{fontSize:'13px'}}> Закінчується</span>
-                    </div>
-                    <div className={'card_body'}>
-                      <div className={'img_size'}>  <img className={'img_commodity'}  src={data[3].url} alt={data[3].name}/></div>
-                        <br/>
-                        <span className={'nameOfCommodity'}> <a href="#">Крісло для геймерів <br/> Hator sport light </a>
-                             </span> <br/>
-                        <span className={'price'}> {data[3].price} $</span>
-                        <span className={'price'} style={{fontSize:'13px'}}> Закінчується</span>
-                    </div>
-                    <div className={'card_body'}>
-                     <div className={'img_size'}>   <img className={'img_commodity'}  src={data[4].url} alt={data[4].name}/> </div>
-                        <br/>
-                        <span className={'nameOfCommodity'}> <a href="#">Крісло для геймерів <br/> Hator sport light </a>
-                             </span> <br/>
-                        <span className={'price'}> {data[4].price} $</span>
-                        <span className={'price'} style={{fontSize:'13px'}}> Закінчується</span>
-                    </div> </div>
-                    <div className={'cards_row'}>
-                    <div className={'card_body'}>
-                      <div className={'img_size'}>  <img className={'img_commodity'}  src={data[5].url} alt={data[5].name}/></div>
-                        <br/>
-                        <span className={'nameOfCommodity'}> <a href="#">Крісло для геймерів <br/> Hator sport light </a>
-                             </span> <br/>
-                        <span className={'price'}> {data[5].price} $</span>
-                        <span className={'price'} style={{fontSize:'13px'}}> Закінчується</span>
-                    </div>
-                    <div className={'card_body'}>
-                     <div className={'img_size'}>   <img className={'img_commodity'}  src={data[6].url} alt={data[6].name}/></div>
-                        <br/>
-                        <span className={'nameOfCommodity'}> <a href="#">Крісло для геймерів <br/> Hator sport light </a>
-                             </span> <br/>
-                        <span className={'price'}> {data[6].price} $</span>
-                        <span className={'price'} style={{fontSize:'13px'}}> Закінчується</span>
-                    </div>
-                    <div className={'card_body'}>
-                      <div className={'img_size'}>  <img className={'img_commodity'}  src={data[7].url} alt={data[7].name}/></div>
-                        <br/>
-                        <span className={'nameOfCommodity'}> <a href="#">Крісло для геймерів <br/> Hator sport light </a>
-                             </span> <br/>
-                        <span className={'price'}> {data[7].price} $</span>
-                        <span className={'price'} style={{fontSize:'13px'}}> Закінчується</span>
-                    </div>
-                    <div className={'card_body'}>
-                      <div className={'img_size'}>  <img className={'img_commodity'}  src={data[8].url} alt={data[8].name}/></div>
-                        <br/>
-                        <span className={'nameOfCommodity'}> <a href="#">Крісло для геймерів <br/> Hator sport light </a>
-                             </span> <br/>
-                        <span className={'price'}> {data[8].price} $</span>
-                        <span className={'price'} style={{fontSize:'13px'}}> Закінчується</span>
-                    </div> <div className={'card_body'}>
-                      <div className={'img_size'}>  <img className={'img_commodity'}  src={data[9].url} alt={data[9].name}/></div>
-                        <br/>
-                        <span className={'nameOfCommodity'}> <a href="#">Крісло для геймерів <br/> Hator sport light </a>
-                             </span> <br/>
-                        <span className={'price'}> {data[9].price} $</span>
-                        <span className={'price'} style={{fontSize:'13px'}}> Закінчується</span>
-                    </div></div>
-                        <div className={'card_body'}>
-                      <div className={'img_size'}>  <img className={'img_commodity'}  src={data[10].url} alt={data[10].name}/></div>
-                        <br/>
-                        <span className={'nameOfCommodity'}> <a href="#">Крісло для геймерів <br/> Hator sport light </a>
-                             </span> <br/>
-                        <span className={'price'}> {data[10].price} $</span>
-                        <span className={'price'} style={{fontSize:'13px'}}> Закінчується</span>
-                    </div>
+
+              <div style={{display:'grid',gridTemplateColumns:'20% 20% 20% 20% 20%'}}>
+                {
+                    data.map(value=> <Commodity data={value} key={value.id} />)
+                }
                 </div>
-
-            </div>
+                </div>
 </div>
-
-
-
-
-
-
 
 
         </div>

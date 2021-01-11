@@ -1,11 +1,12 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
-
+import {useSelector} from "react-redux";
 import './HeaderCss.css'
 
 
     export default function Header()  {
+    const {sumW,wishlist} = useSelector(({sumW: {sumW},wishlist:{wishlist}})=>({sumW,wishlist}))
 return(
     <div className="header">
         <div className="header-top">
@@ -88,7 +89,7 @@ return(
                       <i style={{fontSize:'24px'}} className="fas fa-weight"> </i>
                     </div>
                      <div style={{color:'#c0cad3', margin:'5px'}}>
-                      <i  style={{fontSize:'24px'}} className="fas fa-grin-hearts"> </i>
+                      <i title={`к-сть:${wishlist.length},сума:${sumW}`}  style={{fontSize:'24px',color:"royalblue"}} className="fas fa-grin-hearts"> </i>
                        </div>
                   <div style={{color:'#c0cad3', margin:'5px'}} >
                       <i style={{fontSize:'24px'}} className="fas fa-baby-carriage"> </i>
